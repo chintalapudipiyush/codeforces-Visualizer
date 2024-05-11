@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CF VIZ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <nav>
+        <h1 id="logo">CodeForces Visualizer</h1>
+
+    </nav>
+
+    <!-- textinput -->
+    <div id="ipform">
+        <form id="form">
+            <input type="text" id="input-box" name="Username">
+        </form>
+    </div>
+
+       <!-- THIS IS MY CHART -->
+       <div id="lang-verd">
+        <div id="verdict-chart">
+
+        </div>
+    
+        <div id="language-chart">
+    
+        </div>
+       </div>
+       
+       <div id="ratingdiv">
+        
+            <div id="Rating-chart">
+            
+            </div>
+
+       </div>
+
+       <div id="tag-chart">
+
+       </div>
+
+       <div id="contest-stats">
+            <table>
+                <thead>
+                    <th>Some numbers about</th>
+                    <th id="usernameth"></th>
+                </thead>
+                <tbody id="contest-stats-table-body">
+
+                </tbody>
+            </table>
+       </div>
+
+       <div id="heatmap-div">
+         <div id="heatmap">
+            
+         </div>
+       </div>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', { 'packages': ['corechart', 'calendar'] });
+    </script>
+</body>
+</html>
